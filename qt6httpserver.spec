@@ -4,10 +4,10 @@
 # Using build pattern: cmake
 #
 Name     : qt6httpserver
-Version  : 6.5.3
-Release  : 1
-URL      : https://download.qt.io/official_releases/qt/6.5/6.5.3/submodules/qthttpserver-everywhere-src-6.5.3.tar.xz
-Source0  : https://download.qt.io/official_releases/qt/6.5/6.5.3/submodules/qthttpserver-everywhere-src-6.5.3.tar.xz
+Version  : 6.6.0
+Release  : 2
+URL      : https://download.qt.io/official_releases/qt/6.6/6.6.0/submodules/qthttpserver-everywhere-src-6.6.0.tar.xz
+Source0  : https://download.qt.io/official_releases/qt/6.6/6.6.0/submodules/qthttpserver-everywhere-src-6.6.0.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause GFDL-1.3 GPL-3.0
@@ -52,15 +52,15 @@ license components for the qt6httpserver package.
 
 
 %prep
-%setup -q -n qthttpserver-everywhere-src-6.5.3
-cd %{_builddir}/qthttpserver-everywhere-src-6.5.3
+%setup -q -n qthttpserver-everywhere-src-6.6.0
+cd %{_builddir}/qthttpserver-everywhere-src-6.6.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1696341893
+export SOURCE_DATE_EPOCH=1697147181
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -96,7 +96,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1696341893
+export SOURCE_DATE_EPOCH=1697147181
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/qt6httpserver
 cp %{_builddir}/qthttpserver-everywhere-src-%{version}/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/qt6httpserver/b073f11f0c81a95ab5e32aa6b5d23a5955a95274 || :
@@ -115,15 +115,15 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/usr/include/QtHttpServer/6.5.3/QtHttpServer/private/qabstracthttpserver_p.h
-/usr/include/QtHttpServer/6.5.3/QtHttpServer/private/qhttpserver_p.h
-/usr/include/QtHttpServer/6.5.3/QtHttpServer/private/qhttpserverliterals_p.h
-/usr/include/QtHttpServer/6.5.3/QtHttpServer/private/qhttpserverrequest_p.h
-/usr/include/QtHttpServer/6.5.3/QtHttpServer/private/qhttpserverresponder_p.h
-/usr/include/QtHttpServer/6.5.3/QtHttpServer/private/qhttpserverresponse_p.h
-/usr/include/QtHttpServer/6.5.3/QtHttpServer/private/qhttpserverrouter_p.h
-/usr/include/QtHttpServer/6.5.3/QtHttpServer/private/qhttpserverrouterrule_p.h
-/usr/include/QtHttpServer/6.5.3/QtHttpServer/private/qhttpserverstream_p.h
+/usr/include/QtHttpServer/6.6.0/QtHttpServer/private/qabstracthttpserver_p.h
+/usr/include/QtHttpServer/6.6.0/QtHttpServer/private/qhttpserver_p.h
+/usr/include/QtHttpServer/6.6.0/QtHttpServer/private/qhttpserverliterals_p.h
+/usr/include/QtHttpServer/6.6.0/QtHttpServer/private/qhttpserverrequest_p.h
+/usr/include/QtHttpServer/6.6.0/QtHttpServer/private/qhttpserverresponder_p.h
+/usr/include/QtHttpServer/6.6.0/QtHttpServer/private/qhttpserverresponse_p.h
+/usr/include/QtHttpServer/6.6.0/QtHttpServer/private/qhttpserverrouter_p.h
+/usr/include/QtHttpServer/6.6.0/QtHttpServer/private/qhttpserverrouterrule_p.h
+/usr/include/QtHttpServer/6.6.0/QtHttpServer/private/qhttpserverstream_p.h
 /usr/include/QtHttpServer/QAbstractHttpServer
 /usr/include/QtHttpServer/QHttpServer
 /usr/include/QtHttpServer/QHttpServerAfterRequestViewTraits
@@ -165,7 +165,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libQt6HttpServer.so.6
-/usr/lib64/libQt6HttpServer.so.6.5.3
+/usr/lib64/libQt6HttpServer.so.6.6.0
 
 %files license
 %defattr(0644,root,root,0755)
