@@ -7,7 +7,11 @@ libQt6HttpServer.so.6:QHttpServer::QHttpServer(QObject*)@@Qt_6
 libQt6HttpServer.so.6:QHttpServer::clearMissingHandler()@@Qt_6
 libQt6HttpServer.so.6:QHttpServer::router()@@Qt_6
 libQt6HttpServer.so.6:QHttpServer::~QHttpServer()@@Qt_6
+libQt6HttpServer.so.6:QHttpServerConfiguration::QHttpServerConfiguration()@@Qt_6
+libQt6HttpServer.so.6:QHttpServerConfiguration::~QHttpServerConfiguration()@@Qt_6
 libQt6HttpServer.so.6:QHttpServerRequest::~QHttpServerRequest()@@Qt_6
+libQt6HttpServer.so.6:QHttpServerRequestFilter::QHttpServerRequestFilter()@@Qt_6_PRIVATE_API
+libQt6HttpServer.so.6:QHttpServerRequestFilter::isRequestWithinRate(QHostAddress)@@Qt_6_PRIVATE_API
 libQt6HttpServer.so.6:QHttpServerResponder::QHttpServerResponder(QHttpServerStream*)@@Qt_6_PRIVATE_API
 libQt6HttpServer.so.6:QHttpServerResponder::write(QHttpServerResponder::StatusCode)@@Qt_6
 libQt6HttpServer.so.6:QHttpServerResponder::~QHttpServerResponder()@@Qt_6
